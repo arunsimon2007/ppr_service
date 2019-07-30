@@ -1,0 +1,171 @@
+{
+   "categories": [
+      {
+         "id": 1,
+         "category_name": "Matsoft",
+         "icon_path": "ac_nulla_sed.mp3"
+      },
+      {
+         "id": 2,
+         "category_name": "Sonair",
+         "icon_path": "orci_pede.tiff"
+      },
+      {
+         "id": 3,
+         "category_name": "Zamit",
+         "icon_path": "integer.ppt"
+      },
+      {
+         "id": 4,
+         "category_name": "Keylex",
+         "icon_path": "dis_parturient_montes.xls"
+      },
+      {
+         "id": 5,
+         "category_name": "Treeflex",
+         "icon_path": "mattis.mpeg"
+      }
+   ],
+   "paintings": [
+      {
+         "id": 1,
+         "painting_name": "Biodex",
+         "painting_categories": [],
+         "file_paths": "/images/dummy.jpg",
+         "description": "Arthropathy NOS-oth site"
+      },
+      {
+         "id": 2,
+         "painting_name": "Bytecard",
+         "painting_categories": [],
+         "file_paths": "/images/dummy.jpg",
+         "description": "Taenia solium intestine"
+      },
+      {
+         "id": 3,
+         "painting_name": "Flowdesk",
+         "painting_categories": [],
+         "file_paths": "/images/dummy.jpg",
+         "description": "Opn cerebel lac-mod coma"
+      },
+      {
+         "id": 4,
+         "painting_name": "Konklux",
+         "painting_categories": [],
+         "file_paths": "/images/dummy.jpg",
+         "description": "Viral encephalitis NOS"
+      },
+      {
+         "id": 5,
+         "painting_name": "Tres-Zap",
+         "painting_categories": [],
+         "file_paths": "/images/dummy.jpg",
+         "description": "Congen CV dis-del w p/p"
+      },
+      {
+         "id": 6,
+         "painting_name": "Veribet",
+         "painting_categories": [],
+         "file_paths": "/images/dummy.jpg",
+         "description": "Urethrocele"
+      },
+      {
+         "id": 7,
+         "painting_name": "Latlux",
+         "painting_categories": [],
+         "file_paths": "/images/dummy.jpg",
+         "description": "Late eff wrist/hand burn"
+      },
+      {
+         "id": 8,
+         "painting_name": "Domainer",
+         "painting_categories": [],
+         "file_paths": "/images/dummy.jpg",
+         "description": "Acq torsion dystonia NEC"
+      },
+      {
+         "id": 9,
+         "painting_name": "Voyatouch",
+         "painting_categories": [],
+         "file_paths": "/images/dummy.jpg",
+         "description": "Menopausal disorder NOS"
+      },
+      {
+         "id": 10,
+         "painting_name": "Rank",
+         "painting_categories": [],
+         "file_paths": "/images/dummy.jpg",
+         "description": "Traum subcutan emphysema"
+      },
+      {
+         "id": 11,
+         "painting_name": "Job",
+         "painting_categories": [],
+         "file_paths": "/images/dummy.jpg",
+         "description": "Aplastic anemia NOS"
+      },
+      {
+         "id": 12,
+         "painting_name": "Tin",
+         "painting_categories": [],
+         "file_paths": "/images/dummy.jpg",
+         "description": "Larynx replacement"
+      },
+      {
+         "id": 13,
+         "painting_name": "Temp",
+         "painting_categories": [],
+         "file_paths": "/images/dummy.jpg",
+         "description": "Brain hem NEC-concussion"
+      },
+      {
+         "id": 14,
+         "painting_name": "Stringtough",
+         "painting_categories": [],
+         "file_paths": "/images/dummy.jpg",
+         "description": "Open wound of hand"
+      },
+      {
+         "id": 15,
+         "painting_name": "Prodder",
+         "painting_categories": [],
+         "file_paths": "/images/dummy.jpg",
+         "description": "Probl influ health NOS"
+      },
+      {
+         "id": 16,
+         "painting_name": "Prodder",
+         "painting_categories": [],
+         "file_paths": "/images/dummy.jpg",
+         "description": "Infect/parasite dis NEC"
+      },
+      {
+         "id": 17,
+         "painting_name": "Solarbreeze",
+         "painting_categories": [],
+         "file_paths": "/images/dummy.jpg",
+         "description": "Abdmnal pain rt lwr quad"
+      },
+      {
+         "id": 18,
+         "painting_name": "Gembucket",
+         "painting_categories": [],
+         "file_paths": "/images/dummy.jpg",
+         "description": "50-59% bdy brn/3 deg NOS"
+      },
+      {
+         "id": 19,
+         "painting_name": "Toughjoyfax",
+         "painting_categories": [],
+         "file_paths": "/images/dummy.jpg",
+         "description": "Delay p/part hem-postpar"
+      },
+      {
+         "id": 20,
+         "painting_name": "Redhold",
+         "painting_categories": [],
+         "file_paths": "/images/dummy.jpg",
+         "description": "Pois-cardiovasc agt NEC"
+      }
+   ]
+}
