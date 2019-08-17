@@ -1,8 +1,15 @@
 import express from "express";
 import bodyParser from "body-parser";
+import mongoose from "mongoose";
+
 import data from "../../ppr-service/mock_data.json";
 
 const app = express();
+mongoose
+  .connect("mongodb://localhost/test", { useNewUrlParser: true })
+  .then(() => console.log("DB is connected successfully.."))
+  .catch(error => console.log(`DB connection attempt failed:${error}`));
+
 const version = "v1.0.0";
 const BASE_URL = `/api/ppr/${version}`;
 const PORT_NUMBER = process.env.PORT || 8002;
@@ -44,7 +51,7 @@ app.post(`${BASE_URL}/painting/add/comment`, (req, res) => res.end());
 /* error handling */
 
 app.use((error, req, res, next) => {
-  console.error(error.stack)
+  console.error(error.stack);
   res.status(500).send(`Something went wrong!!`);
 });
 
