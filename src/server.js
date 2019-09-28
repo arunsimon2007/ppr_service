@@ -2,17 +2,17 @@ import express from "express";
 import bodyParser from "body-parser";
 import mongoose from "mongoose";
 
-import data from "../../ppr-service/mock_data.json";
+import { CategoryModel, PaintingModel } from "./models";
 
 const app = express();
 mongoose
-  .connect("mongodb://localhost/test", { useNewUrlParser: true })
-  .then(() => console.log("DB is connected successfully.."))
+  .connect("mongodb://localhost/PPR", { useNewUrlParser: true })
+  .then(() => console.log("DB is connected successfully..!!"))
   .catch(error => console.log(`DB connection attempt failed:${error}`));
 
 const version = "v1.0.0";
 const BASE_URL = `/api/ppr/${version}`;
-const PORT_NUMBER = process.env.PORT || 8002;
+const PORT_NUMBER = process.env.PORT || 8000;
 
 /* Middlewares */
 
@@ -22,28 +22,41 @@ app.use(express.static("public"));
 /* Basic routes */
 
 app.get(`${BASE_URL}/`, (req, res) => {
-  throw new Error();
-  res.send("welcome to home..!!");
+  res.send("PPR services..!");
 });
 
 app.get(`${BASE_URL}/categories/`, (req, res) => {
-  res.send(data["categories"]);
+  const query = CategoryModel.find();
+  const promise = query.exec();
+  promise
+    .then(categoryDocs => res.send(categoryDocs))
+    .catch(error => console.log(`Categories fetching failed ${error}`));
 });
 
-app.get(`${BASE_URL}/categories/:id`, (req, res) => {
+app.get(`${BASE_URL}/category/:id`, (req, res) => {
   const categoryId = Number(req.params.id);
-  const category = data["categories"][categoryId];
-  res.send(category);
+  const query = CategoryModel.findOne({ id: categoryId });
+  const promise = query.exec();
+  promise
+    .then(category => res.send(category))
+    .catch(error => console.log(`Category fetching failed ${error}`));
 });
 
 app.get(`${BASE_URL}/paintings/`, (req, res) => {
-  res.send(data["paintings"]);
+  const query = PaintingModel.find();
+  const promise = query.exec();
+  promise
+    .then(paintingDocs => res.send(paintingDocs))
+    .catch(error => console.log(`Paintings fetching failed ${error}`));
 });
 
 app.get(`${BASE_URL}/painting/:id`, (req, res) => {
   const paintingId = Number(req.params.id);
-  const painting = data["paintings"][paintingId];
-  res.send(painting);
+  const query = PaintingModel.findOne({ id: paintingId });
+  const promise = query.exec();
+  promise
+    .then(painting => res.send(painting))
+    .catch(error => console.log(`Painting fetching failed ${error}`));
 });
 
 app.post(`${BASE_URL}/painting/add/comment`, (req, res) => res.end());
@@ -56,5 +69,5 @@ app.use((error, req, res, next) => {
 });
 
 app.listen(PORT_NUMBER, () =>
-  console.log(`server is running at port number ${PORT_NUMBER}`)
+  console.log(`server is running at port number ${PORT_NUMBER}.`)
 );
